@@ -1,13 +1,11 @@
 <div class="share-page">
-  {{ site.share_text }}
-
   <div class="share-links">
     {% if site.share_facebook %}
       <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"></a>
     {% endif %}
 
     {% if site.share_twitter %}
-      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter"></a>
     {% endif %}
 
     {% if site.share_googleplus %}
@@ -27,7 +25,7 @@
     {% endif %}
 
     {% if site.share_reddit %}
-      <a class="fa fa-reddit" href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit"></a>
+      <a class="fa fa-reddit" href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}" rel="nofollow" target="_blank" title="Share on Reddit"></a>
     {% endif %}
 
     {% if site.share_stumbleupon %}
@@ -35,7 +33,7 @@
     {% endif %}
 
     {% if site.share_hackernews %}
-      <a class = "fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="Share on Hacker News"></a>
+      <a class = "fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title | url_encode }}" rel="nofollow" target="_blank" title="Share on Hacker News"></a>
     {% endif %}
 
 

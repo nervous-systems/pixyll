@@ -58,19 +58,14 @@ body {
 }
 
 .site-header a {
-  color: #333;
   font-weight: 300;
 }
 
 .site-header nav a {
   font-size: 1rem;
-  color: #666;
 }
 
 .site-header nav a:hover {
-  color: #444;
-  opacity: 1;
-  border-bottom: 2px solid #444;
 }
 
 .site-nav a + a {
@@ -82,11 +77,12 @@ body {
   padding: 0;
 }
 
+a:hover { color: #0096cc }
+
 .site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {
-  opacity: 0.88;
 }
 
 /*
@@ -176,34 +172,18 @@ table {
 
 .pagination,
 .button {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 .pagination a, .pagination .disabled {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background: #fafafa;
-  border-radius: 0.1875em;
-  border: 1px solid #f3f3f3;
-  color: #333333;
-  padding: 1em 1.5em;
+
 }
 
 .pagination .disabled {
   opacity: 0.5;
-}
-
-.pagination a:hover, .pagination a:focus {
-  background: white;
-  color: #477dca;
-}
-
-.pagination a:active {
-  background: #f7f7f7;
 }
 
 .wrap .measure {
@@ -217,8 +197,7 @@ table {
   font-weight: 300;
   margin: 0;
   padding: .25em 0;
-  color: #7a7a7a;
-  font-style: italic;
+  text-align: right;
 }
 
 .pagination .button {
@@ -232,12 +211,6 @@ table {
   background-color: #999;
 }
 
-.button-disabled:hover,
-.button-disabled:active,
-.button-disabled:focus {
-  cursor: not-allowed;
-  background-color: #999;
-}
 
 form {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -487,12 +460,16 @@ h6,
 }
 
 .share-page {
-  font-size:  0.65em;  
-  padding: 2em 0 0 0;
+  font-size:  0.65em;
+  padding: 0em 0 0 0;
 }
 
-.share-page div {
-  font-size: 1.3em;
+.share-links {
+text-align: center;
+font-size: 4em;
+padding-top: .5em;
+padding-bottom: .5em;
+
 }
 
 footer {

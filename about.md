@@ -1,19 +1,26 @@
 ---
 layout: page
-title: About Pixyll
+title: About
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+Nervous Systems, Ltd. is a London-based software consultancy centered around
+functional & asynchronous programming.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+## Team
 
-Thanks to the following:
+### [Moe Aboulkheir](/static/MoeAboulkheir.pdf)
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
+![inline-photo](/images/head.jpg)
+
+<blockquote class="quote">
+<p>
+<ul>
+<li>I'm interested in working on tools which obviate unnecessary problems</li>
+<li>I fall before the quiet, furious supremacy of Lisp</li>
+<li>My head is gigantic</li>
+<li>I'm guilty of <a href="http://xahlee.info/UnixResource_dir/lambda_logo.html">unserious treatment of the lambda</a></li>
+</ul>
+</p></blockquote>
+
+
