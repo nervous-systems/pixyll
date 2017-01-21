@@ -7,6 +7,7 @@ author:     Moe Aboulkheir
 categories: clojure aws dynamo hildebrand
 tags: clojure aws dynamo hildebrand
 redirect_from: /clojure/aws/dynamo/hildebrand/2015/06/08/hildebrand/
+gh: hildebrand
 ---
 
 ## Motivation

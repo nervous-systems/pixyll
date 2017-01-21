@@ -1,20 +1,78 @@
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 { font-weight: normal; border-width: 0px }
 
-.footnote {
-  margin: 10px;
-  margin-left: 20px;
+.dir-layout {
+font-family: "Droid Sans Mono", monospace;
+list-style-type: none;
+padding: 0;
+float: right;
+margin-left: 22px;
+color: #666666;
+};
+
+.dir-layout ul { list-style-type: none; margin-bottom: 8px }
+.dir-layout li { padding: 0; font-size: 1rem; }
+
+#structure + .highlight { float: right }
+
+.post-tags {
+text-align: right;
+font-size: 1rem;
 }
+
+.post .meta-author {
+font-size: 1.5rem;
+}
+
+.post .thumbnail-right {
+float: right;
+margin: 0px 0px 12px 12px;
+}
+
+.post .thumbnail-left {
+float: left;
+margin: 12px 12px 12px 0px;
+}
+
+.post .inline-thumbnail-left {
+float: left;
+margin: 0px 12px 12px 0px;
+}
+
+ol.commentary li, ul.commentary li {
+font-size: .875rem;
+line-height: 1.2rem;
+}
+
+body .post small.commentary { line-height: 1.2rem; display: block; }
+.footnote * {
+  line-height: 1.2rem;
+}
+.footnote {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 30px;
+ line-height: 1.2rem;
+
+}
+small.commentary + small.commentary { padding-top: 1rem; }
+
+.thumbnail {
+float: left;
+padding-right: 14px;
+}
+
+
+body .posts div.post { margin-bottom: 30px }
+.post .post-summary {  margin-left: 40px; }
 
 .footnote br { line-height: 1.7rem }
 
-.footnote small {   line-height: 1rem; }
 .footnote li { line-height: 1.4rem; }
 
 .post-header { margin-top: 1em }
 
 .posts .post-meta {
-text-align: left;
-font-size: 1rem;
+font-size: 1.2rem;
 padding-bottom: 0px;
 }
 
@@ -28,9 +86,16 @@ border-width: 0;
 margin-top: 1em;
 }
 
-.post-date {
-  font-size: 60%;
-  }
+.related-posts .post-summary {
+ font-size: 1rem;
+}
+
+
+.post-date, .post-meta {
+font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+font-size: 1rem;
+
+}
 
 .post img {
   display: block;
@@ -42,6 +107,12 @@ margin-top: 1em;
 color: #0096cc;
 font-weight: normal;
 }
+
+.related-posts .post-link .post-title {
+font-size: 1.9rem;
+}
+
+
 
 .posts .post-link .post-title { border-color: black; font-weight: normal; }
 
@@ -72,15 +143,16 @@ body {
 
 .infobox-title {
   color: #666666;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   border-bottom: double 1px #42c0fb;
   margin-left: 90px;
   margin-bottom: 8px;
-  font-weight: bold;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-size: 1.25rem;
 }
 
-div.highlight code { font-family: "Droid Sans Mono", monospace; }
+div.highlight code, code { font-family: "Droid Sans Mono", monospace; }
 
 .highlight pre {
   overflow-x: auto;       // this sets the scrolling in x
@@ -92,12 +164,16 @@ div.highlight code { font-family: "Droid Sans Mono", monospace; }
 
 .site-nav {
   clear: right;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+
 }
 
 .inline-summary {
   padding: 0;
   border: none;
   font-style: normal;
+  line-height: 2rem;
+  font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman";
 }
 
 .waiver {
@@ -137,6 +213,7 @@ blockquote.quote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 
+
 blockquote.quote:before {
   color: #ccc;
   content: open-quote;
@@ -154,13 +231,13 @@ blockquote.quote p {
 
 
 .highlight .hll { background-color: #ffffcc }
-.highlight .c { color: black; font-style: italic } /* Comment */
+.highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
 .highlight .o { font-weight: bold } /* Operator */
 .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
-.highlight .c1 { color: black; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #333333; } /* Comment.Single */
 .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */

@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      Briefly, Dynamo Streams + core.async
+title:      Clojure & Dynamo Streams, Briefly
 date:   2015-07-01 16:28:29
 summary:    A short post demonstrating asynchronous use of the DynamoDB Streams API preview from Clojure.
 author:     Moe Aboulkheir
+thumbnail: /images/streams-thumb.png
 categories: clojure aws dynamo hildebrand streams
 tags: clojure aws dynamo hildebrand streams
 ---

@@ -4,15 +4,15 @@ author: Moe Aboulkheir
 title: Visualizing Android Audio Latency
 date:       2015-07-10 11:21:29
 summary: An interactive exploration of roundtrip audio latency on Android devices.
+og_image: /images/android-og.png
+thumbnail: /images/android-thumb.png
 categories: android audio
 tags: android audio
 ---
 
 <link rel="stylesheet" type="text/css" href="/static/latency.css" />
-<body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script>
-## Reasoning
 
 I'm currently working on a client's project, a part of which processes microphone input while
 blaring audio out of the speaker --- and tries to make sense of the
@@ -57,7 +57,8 @@ microphone.
 
 <div class="footnote">
 <sup>1</sup> <small>The Android project also has some code for <a href="https://android.googlesource.com/platform/frameworks/wilhelm/+/master/tests/examples/slesTestFeedback.cpp">software latency measurement</a>, using a slightly different approach.</small><br />
-<sup>2</sup> <small>Superpowered is a well-designed library, and its stewards are agitating for improvement of the latency situation on Android, which is great.  It has many advantages, but as it's a layer over OpenSL, it's in no position to reduce latency.</small>
+<a id="superpowered-footnote"></a>
+<sup>2</sup> <small>Superpowered is a well-designed library, and its stewards are doing a great job agitating for improvement of the audio latency situation on Android.  As opposed to the hard I/O limits visualized below, audio <i>processing</i> is amenable to a variety of software-based approaches to performance improvement &mdash; it's on this category of optimization that Superpowered's latency-reduction efforts are focused.</small>
 </div>
 ## Data
 
